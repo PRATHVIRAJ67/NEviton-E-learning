@@ -15,7 +15,7 @@ const CoursePage = () => {
   const fetchVideos = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3001/api/videos');
+      const response = await fetch('https://neviton-e-learning-1.onrender.com/api/videos');
       const videosData = await response.json();
       setVideos(videosData);
       
@@ -33,7 +33,7 @@ const CoursePage = () => {
     try {
       console.log(video.id)
       
-      const response = await fetch(`http://localhost:3001/api/videos/${video.id}/stream`);
+      const response = await fetch(`https://neviton-e-learning-1.onrender.com/api/videos/${video.id}/stream`);
       const streamData = await response.json();
       
       setCurrentVideo({
