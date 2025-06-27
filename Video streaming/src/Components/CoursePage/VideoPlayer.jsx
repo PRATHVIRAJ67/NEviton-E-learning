@@ -373,7 +373,7 @@ const VideoPlayer = ({ videoData, onVideoEnd, autoPlay  }) => {
         </div>
       )}
 
-      {/* Controls */}
+      {}
       <div 
         className="controls-overlay"
         style={{
@@ -392,7 +392,7 @@ const VideoPlayer = ({ videoData, onVideoEnd, autoPlay  }) => {
           />
         </div>
 
-        {/* Control buttons */}
+        {}
         <div className="controls-container">
           <div className="control-group">
             <button

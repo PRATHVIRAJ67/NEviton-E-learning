@@ -96,7 +96,9 @@ app.get('/api/videos/:id/stream', (req, res) => {
     muxAssetId: video.muxAssetId
   });
 });
-
+app.get('/ping', (req, res) => {
+  res.status(200).send('OK');
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
  
